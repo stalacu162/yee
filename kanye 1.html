@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Title> Kanye's World</title>
+</head>
+<Style>
+
+.bb td, .bb th {
+     border-bottom: 1px solid black !important;
+    }
+#answer {
+display: none;
+}
+
+#answer2 {
+font-size: 20px;
+}
+
+#fashion {
+display: none;
+}
+
+#musico {
+display: none;
+}
+
+#tabloidkanye {
+display: none;
+}
+
+#artkanye {
+display: none;
+}
+
+
+
+element.style {
+}
+section {
+position: center;
+width: 878px;
+background-color: #FFFFFD;
+border-right: 1px solid #cccccc;
+border-left: 1px solid #cccccc;
+border-top: 1px solid #cccccc;
+border-bottom: 1px solid #cccccc;
+padding: 10px;
+min-height: 500px;
+}
+user agent stylesheetarticle, aside, footer, header, hgroup, main, nav, section {
+display: block;
+}
+h1 {
+font-family: Lato, helvetica, arial, sans-serif;
+font-size: 48px;
+font-style: normal;
+font-weight: 300;
+padding-top: 0px;
+margin-bottom: 0px;
+margin-top: 10px;
+color: #color;
+}
+p.main {
+    text-align: left;
+    }
+body, html {
+font-family: Lato, Helvetica, arial, sans-serif;
+font-size: 16px;
+font-weight: 300;
+color: #000000;
+background-color: #D3D3D3;
+header {
+position: left;
+width: 900px;
+height: 70px;
+background-color: #FDFFFE;
+text-align: normal;
+
+}
+</style>
+<body>
+<div id="container" align="center">
+<header>
+<CENTER><h1> K A N Y E</h1></center>
+</header>
+<section>
+<img src="pic1.jpg">
+<p align="left"> In 2003, the world saw the rise of a different kind of rapper, someone with an interest in not 
+ music but fashion, art, design and innovation. Kanye West is a force to be reckoned with. But since the beginning
+ of his career, Kanye has adopted many
+different types of personas in different industries. With this quiz, you can find out which Kanye are you.</p>
+
+<div id="main">
+<div id="header">What Kanye are you?</div>
+<table>
+<form  id="form1" action=" "/>
+<tr><td>
+<p>What do you value most?</p></td><td>
+<input type="radio" name = "opinion" id="clothes" value="1" />Clothes</td><td>
+<input type="radio" name = "opinion" id="music" value="20" />Music </td><td>
+<input type="radio" name = "opinion" id="gossip" value="30" />Gossip</td><td>
+<input type="radio" name = "opinion" id="art" value="40" />Art</td><td>
+</td></tr>
+<tr><td>
+<p>What is your favorite social media platform?</p></td><td>
+<input type="radio" name="social" id="facebook" value="1" />Facebook</td><td>
+<input type="radio" name="social" id="twitter" value="1" />Twitter</td><td>
+<input type="radio" name="social" id="instagram" value="1" />Instagram</td><td>
+</td></tr>
+<tr><td>
+<p>Do you think Beyonce is amazing?</p></td><td>
+<input type="radio" name="beyonce" id="yes" value="1" />Yes</td><td>
+<input type="radio" name="beyonce" id="no" value="1" />No</td><td>
+</td></tr>
+<tr><td>
+<p>Who do you admire most?</p></td><td>
+<input type="radio" name="hero" id="jobs" value="1" /> Steve Jobs</td><td>
+<input type="radio" name="hero" id="davinci" value="1" />da Vinci</td><td>
+<input type="radio" name="hero" id="disney" value="1" />Walt Disney </td><td>
+<input type="radio" name="hero" id="jesus" value="1" />Jesus</td><td>
+</td></tr>
+
+</td></tr>
+<tr><td>
+<p>What communication medium do you prefer?</p></td><td>
+<input type="radio" name="medium" id="tv" value="1" />TV</td><td>
+<input type="radio" name="medium" id="magazine" value="1" />Magazine</td><td>
+<input type="radio" name="medium" id="radio" value="1" />Radio</td><td>
+</tr>
+<tr><td>
+<br />
+<center><input type="submit" value="Which Yeezy are you!?" ></center>
+</td></tr>
+</form>
+</table>
+<br><br>
+<p id="answer"></p>
+<p id="answer2"></p>
+<img id="fashion" src="fashion2013.jpg" align="center" width="50%">
+<img id="musico" src="musico.jpg" align="center" width="50%">
+<img id="tabloidkanye" src="tabloidkanye.jpg" align="center" width="50%">
+<img id="artkanye" src="artkanye.jpg" align="center" width="50%">
+<p id="answer3"></p>
+
+</div>
+<script>
+   opinionvar = ['clothes', 'music', 'gossip', 'art'];
+   socialvar = ['facebook', 'twitter', 'instagram'];
+   beyoncevar = ['yes', 'no'];
+   herovar = ['jobs', 'davinci','disney','jesus'];
+   mediumvar = ['tv', 'magazine', 'radio'];
+    
+	   document.getElementById("form1").onsubmit=function() {
+	   for(i=0; i<opinionvar.length; i++) {
+	   if (document.getElementById(opinionvar[i]).checked) {
+	   opinion = document.getElementById(opinionvar[i]).value 
+	   }
+	   }//end for
+	   
+	   for(i=0; i<socialvar.length; i++) {
+	   if (document.getElementById(socialvar[i]).checked) {
+	   social = document.getElementById(socialvar[i]).value 
+	   }
+	   }//end for
+	   
+	   for(i=0; i<beyoncevar.length; i++) {
+	   if (document.getElementById(beyoncevar[i]).checked) {
+	   beyonce = document.getElementById(beyoncevar[i]).value 
+	   }
+	   }//end for
+	   
+	   
+	   
+	   for(i=0; i<mediumvar.length; i++) {
+	   if (document.getElementById(mediumvar[i]).checked) {
+	   medium = document.getElementById(mediumvar[i]).value 
+	   }
+	   }//end for
+	   
+	   total = parseInt(opinion) + parseInt(social) + parseInt(beyonce) 
+	   + parseInt(medium);
+	   document.getElementById("answer").innerHTML = total;
+	   
+	   if(total >=1 && total < 15) {
+document.getElementById("answer2").innerHTML = " You are Fashion Kanye. <br> You are a pioneer and believe the fashion industry needs an awakening led by your army. Your Kanye advice is: "
+document.getElementById("fashion").style.display = "inline";
+	document.getElementById("answer3").innerHTML = "Me and Virgil bough the leather jogging pants six years ago and they said no. How many people you done see with a leather jogging pant?"
+}
+
+   if(total >=20 && total < 30) {
+document.getElementById("answer2").innerHTML = "You are Musician Kanye. <br> Every musician before you had no clue what they were doing. It was thanks to you, that music has taken a different form. Your Kanye advice is:"
+document.getElementById("musico").style.display = "inline";
+	document.getElementById("answer3").innerHTML = " I liberate minds with my music. That's more important than liberating a few people from spirituality or whatever.";
+}
+	
+	if(total >=30 && total < 40) {
+document.getElementById("answer2").innerHTML = "You are Tabloid Kanye. <br> With such magnetic talent, how could people not talk about you? You are a light that people envy and easy to be talked about. Your Kanye advice is:"
+document.getElementById("tabloidkanye").style.display = "inline";
+	document.getElementById("answer3").innerHTML = " Don't ask me a question about something you saw in the tabloids. Don't try to antagonize me. Because you know what? It's not safe for you in the zoo. Never think that I'm not from Chicago for one second and think you can walk up and disrespect me and my family constantly. "
+}	
+
+	if(total >=40 && total < 50) {
+document.getElementById("answer2").innerHTML = "You are Art Kanye. <br> The only way you can properly demonstrate your talent is through art and its mixed media. How else will your talent be conveyed?"
+document.getElementById("artkanye").style.display = "inline";
+	document.getElementById("answer3").innerHTML = " My goal, if I was going to do art, fine art, would have been to become Picasso or greater. That always sounds so funny to people, comparing yourself to someone who has done so much, and that mentality that suppresses humanity."
+}   
+	
+	   
+	   return false; // required to not refresh the page; just leave this here
+	   }// end the submit function
+	
+   
+
+
+
+</script>
+</body>
+</html>
